@@ -1,0 +1,14 @@
+{
+  "name": "js-pro-node",
+  "version": "1.0.0",
+  "description": "node js project",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ihor Holohots",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.5"
+  }
+}
