@@ -8,7 +8,7 @@
     <title>Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
 </head>
 <body>
 <div class="container py-5">
@@ -20,7 +20,6 @@
                     class="btn btn-primary w-100"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
-                    data-bs-toggle="tooltip"
                     data-bs-placement="top"
                     title="Натисни, щоб побачити модальне вікно"
             >
@@ -62,8 +61,27 @@
     </div>
 </div>
 
+<div class="container">
+    <h1 class="mb-4">Birth date</h1>
+
+    <!-- My BD -->
+    <div class="mb-4">
+        <p><strong>My BD date:</strong> <span id="myBirthDate" class="text-primary"></span></p>
+    </div>
+
+    <!-- User form -->
+    <div class="mb-3">
+        <label for="userInput" class="form-label">Input your BD (DD/MM/YYYY):</label>
+        <input type="text" id="userInput" class="form-control" placeholder="Example: 12/04/2000">
+    </div>
+
+    <button id="convertBtn" class="btn btn-success mb-3">Change</button>
+
+    <!-- Result -->
+    <div id="result" class="alert d-none"></div>
+</div>
+
 <!-- Bootstrap JS -->
-<script src="./js/bootstrap.bundle.min.js"></script>
-<script src="./js/index.js"></script>
+<script type="module" src="src/js/main.js"></script>
 </body>
 </html>
