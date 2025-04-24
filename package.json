@@ -6,12 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "author": "Ihor Holohots",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.5",
+    "gh-pages": "^6.3.0",
     "moment": "^2.30.1"
   },
   "devDependencies": {

@@ -1,12 +1,12 @@
 'use strict';
 
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Tooltip } from 'bootstrap';
 import moment from 'moment';
 
 const initBootstrapLogic = () => {
     // Tooltip
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-    tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+    const tooltipTriggerList = document.querySelectorAll('[title]');
+    tooltipTriggerList.forEach(el => new Tooltip(el));
 
     // Toggle alert
     const alertBtn = document.getElementById('alertToggleBtn');
