@@ -8,7 +8,7 @@
     <title>Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script type="module" crossorigin src="/js-pro-node/assets/index-Bfums0Ys.js"></script>
+  <script type="module" crossorigin src="/js-pro-node/assets/index-DLSeQIXS.js"></script>
   <link rel="stylesheet" crossorigin href="/js-pro-node/assets/index-Dua2pFkn.css">
 </head>
 <body>
@@ -18,11 +18,11 @@
             <!-- Trigger button -->
             <button
                     type="button"
-                    class="btn btn-primary w-100"
+                    class="btn btn-primary w-100 custom-tooltip"
                     data-bs-toggle="modal"
+                    data-bs-placement="bottom"
+                    title="Click to open modal"
                     data-bs-target="#exampleModal"
-                    data-bs-placement="top"
-                    title="Натисни, щоб побачити модальне вікно"
             >
                 Open modal
             </button>
@@ -30,7 +30,12 @@
 
         <div class="col-12 col-md-6 mb-3">
             <!-- Кнопка для алерта -->
-            <button id="alertToggleBtn" class="btn btn-warning w-100">
+            <button
+                    id="alertToggleBtn"
+                    class="btn btn-warning w-100"
+                    data-bs-placement="bottom"
+                    title="Click to show alert"
+            >
                 Show/Hidden alert
             </button>
         </div>
@@ -76,7 +81,12 @@
         <input type="text" id="userInput" class="form-control" placeholder="Example: 12/04/2000">
     </div>
 
-    <button id="convertBtn" class="btn btn-success mb-3">Change</button>
+    <button
+            id="convertBtn"
+            class="btn btn-success mb-3"
+            data-bs-placement="bottom"
+            title="Click to change date"
+    >Change</button>
 
     <!-- Result -->
     <div id="result" class="alert d-none"></div>
